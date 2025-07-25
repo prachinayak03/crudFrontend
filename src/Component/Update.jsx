@@ -10,7 +10,7 @@ const Update = () => {
   const navigate = useNavigate()
 
   useEffect(()=>{
-    axios.get('http://localhost:3001/getUser/'+id)
+    axios.get('https://crud-backend-olive-alpha.vercel.app/getUser/'+id)
     .then(result => {console.log(result)
       setName(result.data.name)
       setEmail(result.data.email)
