@@ -15,7 +15,7 @@ const User = () => {
         },[])
 
         const deleteHandler = (id)=>{
-            axios.delete('http://localhost:3001/deleteUser/'+id)
+            axios.delete('https://crud-backend-olive-alpha.vercel.app/deleteUser/'+id)
             .then(res => {console.log(res)
                 window.location.reload()})
             .catch(errr => console.log(errr))
