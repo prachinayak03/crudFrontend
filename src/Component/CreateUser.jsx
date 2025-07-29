@@ -10,7 +10,7 @@ const CreateUser = () => {
 
   const Submit  =(e)=>{
     e.preventDefault();
-    axios.post("https://crud-backend-olive-alpha.vercel.app/createUser" , {name , email ,age})
+    axios.post("https://crud-backend-prachus-projects-235b4182.vercel.app/createUser" , {name , email ,age})
     .then (result =>{
       console.log(result),
       navigate('/')
