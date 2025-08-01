@@ -9,7 +9,7 @@ const User = () => {
     //     }])
         const [users , setUser]=useState([])
         useEffect(()=>{
-            axios.get('https://crud-backend-prachus-projects-235b4182.vercel.app')
+            axios.get('https://localhost:3000')
             .then (result => setUser(result.data))
             .catch(err => console.log(err))
         },[])
