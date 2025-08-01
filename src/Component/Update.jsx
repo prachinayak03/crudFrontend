@@ -22,7 +22,7 @@ const Update = () => {
 
   const update =(e)=>{
     e.preventDefault();
-    axios.put("http://localhost:3001/updateUser/"+id, {name , email ,age})
+    axios.put("https://crud-backend-prachus-projects-235b4182.vercel.app/updateUser/"+id, {name , email ,age})
     .then (result =>{
       console.log(result),
       navigate('/')
